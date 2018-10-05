@@ -11,7 +11,7 @@
 	
 	<link rel="icon" href="images/favicon.ico">
 	
-	<title>Medialoot Bootstrap 4 Dashboard Template</title>
+	<title>NotasApp</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -47,6 +47,7 @@
 				<header class="page-header row justify-center">
 					<div class="col-md-6 col-lg-8" >
 						<h1 class="float-left text-center text-md-left">Cards</h1>
+						<button id="btn-add-nota" type="button" class="btn btn-sm btn-primary">Nueva nota</button>
 					</div>
 					
 					<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,18 +70,25 @@
 				
 				<section class="row">
 					<div class="col-sm-12">
-						<section class="row">
+						<section class="row" id="note-cards">
 							<div class="col-12">
 								<h3 class="mb-4">Basic Cards</h3>
 							</div>
 							
 							<div class="col-lg-4 mb-4">
-								<div class="card card-primary card-inverse">
+								<div class="card">
 									
 									<div class="card-block">
 											<h3 class="card-title">Default Card</h3>
+
+										
 											<div class="dropdown card-title-btn-container">
-													<button class="btn btn-sm btn-fav" type="button"><em class="fa fa-star"></em></button>
+													<button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><em class="fa fa-cog"></em></button>
+
+													<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item btn-fav" href="#"><em class="fa fa-star mr-1"></em> Marcar Favorito</a>
+														<a class="dropdown-item btn-delete" href="#"><em class="fa fa-trash mr-1"></em> Eliminar</a>
+													</div>
 												</div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
 						                    ut ante in sapien blandit luctus sed ut lacus. Phasellus urna est, faucibus
@@ -91,13 +99,18 @@
 							</div>
 
 							<div class="col-lg-4 mb-4">
-									<div class="card card-primary card-inverse">
+									<div class="card">
 										
 										<div class="card-block">
 												<h3 class="card-title">Default Card</h3>
 												<div class="dropdown card-title-btn-container">
-														<button class="btn btn-sm btn-fav" type="button"><em class="fa fa-star"></em></button>
+													<button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><em class="fa fa-cog"></em></button>
+
+													<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+														<a class="dropdown-item btn-fav" href="#"><em class="fa fa-star mr-1"></em> Marcar Favorito</a>
+														<a class="dropdown-item btn-delete" href="#"><em class="fa fa-trash mr-1"></em> Eliminar</a>
 													</div>
+												</div>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
 												ut ante in sapien blandit luctus sed ut lacus. Phasellus urna est, faucibus
 												nec ultrices placerat, feugiat et ligula. Donec vestibulum magna a dui
