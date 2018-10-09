@@ -34,4 +34,18 @@ $(document).ready(function(){
         $(this).remove();
     });
 
+    $(document).on("click","#btn-add-nuevo-alumno", function () {
+        let nombre = $("#nombreNuevoAlumno").val();
+        let apellidos = $("#apellidosNuevoAlumno").val();
+
+        let nuevoAlumno = `<tr id="1"><td>${nombre}</td><td>${apellidos}</td><td>2º DAM</td><td><button class="btn btn-primary btn-editar-alumno">Editar</button></td></tr>`;
+        $("#tabla-alumnos").append(nuevoAlumno);
+
+        $('#nuevoAlumnoModal').modal('hide');
+
+        $("#nombreNuevoAlumno").val("");
+        $("#apellidosNuevoAlumno").val("");
+    });
+
+
 });

@@ -50,7 +50,7 @@
 				<header class="page-header row justify-center">
 					<div class="col-md-6 col-lg-8">
 						<h1 class="float-left text-center text-md-left">Cards</h1>
-						<button id="btn-add-nota" type="button" class="btn btn-sm btn-primary">Nueva nota</button>
+						<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#nuevoAlumnoModal">Nuevo alumno</button>
 					</div>
 
 					<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle"
@@ -111,7 +111,7 @@
 													</tr>
 												</thead>
 
-												<tbody>
+												<tbody id="tabla-alumnos">
 													<tr id="1">
 														<td>Miguel</td>
 
@@ -155,6 +155,37 @@
 			</main>
 		</div>
 	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="nuevoAlumnoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Nuevo alumno</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+					  <label for="nombreNuevoAlumno" class="col-form-label">Nombre:</label>
+					  <input type="text" class="form-control" id="nombreNuevoAlumno">
+					</div>
+					<div class="form-group">
+					  <label for="apellidosNuevoAlumno" class="col-form-label">Apellidos:</label>
+					  <input type="text" class="form-control" id="apellidosNuevoAlumno">
+					</div>
+				  </form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+			  <button type="button" class="btn btn-primary" id="btn-add-nuevo-alumno">Guardar</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<!-- /Modal -->
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
