@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-icon (click)="sidenav.toggle()" class="example-icon">menu</mat-icon>
+  <span> Menú lateral App</span>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" class="menu-lateral">
+    <mat-list role="list">
+      <mat-list-item role="listitem">Inicio </mat-list-item>
+      <mat-list-item role="listitem">Usuarios </mat-list-item>
+      <mat-list-item role="listitem">Perfil </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>Hola Mundo</mat-sidenav-content>
+
+</mat-sidenav-container>
