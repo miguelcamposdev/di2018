@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">01_HelloAndroid</string>
+    <string name="activity_ebook_reader">Lector de Libros</string>
+</resources>
