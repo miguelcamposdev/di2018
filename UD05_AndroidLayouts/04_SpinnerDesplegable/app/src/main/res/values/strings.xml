@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">04_SpinnerDesplegable</string>
+    <string-array name="starwars_objects">
+        <item>Light Saber</item>
+        <item>Dark Saber</item>
+        <item>BB8</item>
+        <item>Death Star</item>
+    </string-array>
+
+</resources>
