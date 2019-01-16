@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">05_ConstraintLayoutAvanzado</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="checkbox_terminos" translatable="false">Acepto los término y condiciones del registro</string>
+    <string name="hint_apellidos">Apellidos</string>
+</resources>
