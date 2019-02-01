@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.miguelcr.a01_optionsmenu.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_take_photo"
+        android:icon="@drawable/ic_photo_camera_white_24dp"
+        android:title="Tomar foto"
+        app:showAsAction="ifRoom" />
+
+</menu>
